@@ -1,0 +1,23 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`test the whole component check the snapshot 1`] = `
+<div>
+  <div
+    class="header"
+  >
+    <div>
+      <img
+        alt="site icon"
+        src="ingredients.png"
+      />
+      <h1>
+        Ingrediento
+      </h1>
+    </div>
+    <img
+      alt="cart icon"
+      src="shopping-cart.png"
+    />
+  </div>
+</div>
+`;
