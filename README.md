@@ -76,3 +76,7 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 
 2. cart
 <a href="https://www.flaticon.com/free-icons/smart-cart" title="smart cart icons">Smart cart icons created by Freepik - Flaticon</a>
+
+3. background 
+Photo by <a href="https://unsplash.com/@videmusart?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Syd Wachs</a> on <a href="https://unsplash.com/photos/epqNIYI6S7E?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+  
