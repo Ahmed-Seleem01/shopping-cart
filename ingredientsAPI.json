@@ -1,0 +1,74 @@
+{
+  "ingredients": [
+    {
+      "id": 1,
+      "name": "Flour",
+      "description": "Ground wheat used for baking",
+      "image": "https://images.unsplash.com/photo-1627485937980-221c88ac04f9?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8ZmxvdXJ8ZW58MHx8MHx8&auto=format&fit=crop&w=700&q=60",
+      "price": 1.99
+    },
+    {
+      "id": 2,
+      "name": "Sugar",
+      "description": "Granulated sweetener used in cooking and baking",
+      "image": "https://images.unsplash.com/photo-1634612831148-03a8550e1d52?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTJ8fHN1Z2FyfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=700&q=60",
+      "price": 3.49
+    },
+    {
+      "id": 3,
+      "name": "Salt",
+      "description": "Mineral used to enhance flavor in food",
+      "image": "https://images.unsplash.com/photo-1517856497829-3047e3fffae1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OXx8c2FsdHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=700&q=60",
+      "price": 0.99
+    },
+    {
+      "id": 4,
+      "name": "Olive Oil",
+      "description": "Oil made from pressed olives",
+      "image": "https://images.unsplash.com/photo-1474979266404-7eaacbcd87c5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8b2xpdmUlMjBvaWx8ZW58MHx8MHx8&auto=format&fit=crop&w=700&q=60",
+      "price": 10.00
+    },
+    {
+      "id": 5,
+      "name": "Butter",
+      "description": "Dairy product made from milk or cream",
+      "image": "https://images.unsplash.com/photo-1589985270826-4b7bb135bc9d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8YnV0dGVyfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=700&q=60",
+      "price": 3.01
+    },
+    {
+      "id": 6,
+      "name": "Eggs",
+      "description": "A versatile ingredient used in cooking and baking",
+      "image": "https://images.unsplash.com/photo-1518569656558-1f25e69d93d7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8ZWdnc3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=700&q=60",
+      "price": 4.99
+    },
+    {
+      "id": 7,
+      "name": "Milk",
+      "description": "A liquid ingredient used in cooking and baking",
+      "image": "https://images.unsplash.com/photo-1517448931760-9bf4414148c5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8TWlsa3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=700&q=60",
+      "price": 1.99
+    },
+    {
+      "id": 8,
+      "name": "Vanilla Extract",
+      "description": "A common flavoring used in baking",
+      "image": "https://plus.unsplash.com/premium_photo-1670895801315-2c294e542a98?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8dmFuaWxsYXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=700&q=60",
+      "price": 5.99
+    },
+    {
+      "id": 9,
+      "name": "Cinnamon",
+      "description": "A spice commonly used in baking and cooking",
+      "image": "https://images.unsplash.com/photo-1550807014-1236e91b92d4?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8Q2lubmFtb258ZW58MHx8MHx8&auto=format&fit=crop&w=700&q=60",
+      "price": 1.49
+    },
+    {
+      "id": 10,
+      "name": "Chocolate Chips",
+      "description": "Small pieces of chocolate used in baking",
+      "image": "https://images.unsplash.com/photo-1585503100597-d70e5dc45d81?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8Q2hvY29sYXRlJTIwQ2hpcHN8ZW58MHx8MHx8&auto=format&fit=crop&w=700&q=60",
+      "price": 2.99
+    }
+  ]
+}
