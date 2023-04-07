@@ -1,48 +1,50 @@
-
-.ingredients-cards{
+.container{
   background-color: rgb(238, 246, 250);
   display: flex;
-  flex-wrap: wrap;
-  gap: 50px;
+  flex-direction: column;
   align-items: center;
-  justify-content: space-around;
-  padding: 120px;
-  
-  .ingredient-card:last-child{
-    align-self: flex-start;
-  }
-  
-  a{
-    text-decoration:none;
-  }
-  
-  .ingredient-card{
-    border: 3px solid rgb(78, 78, 78);
-    border-radius: 10px;
-    background-color: rgb(241, 253, 219);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 20px;
-    padding: 30px;
-    
-    img{
-      width: 250px;
-      height: 250px;
-      object-fit: cover;
-      border-radius: 30px;
-      border: 2px solid rgb(158, 158, 158);
-    }
-    
-    h2{
-      // border: 2px solid;
-      padding: 0;
-      margin: 0;
-      color: black;
-    }
-    
-    Link{
+  padding-top: 150px;
 
+  .ingredients-cards{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    align-items: center;
+    justify-content: space-around;
+    padding: 50px 0px;
+    
+    a{
+      text-decoration:none;
+    }
+    
+    .ingredient-card{
+      border: 3px solid rgb(78, 78, 78);
+      border-radius: 10px;
+      background-color: rgb(241, 253, 219);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+      padding: 30px;
+      
+      img{
+        width: 250px;
+        height: 250px;
+        object-fit: cover;
+        border-radius: 30px;
+        border: 2px solid rgb(158, 158, 158);
+      }
+      
+      h2{
+        // border: 2px solid;
+        padding: 0;
+        margin: 0;
+        color: black;
+      }
+      
+      Link{
+  
+      }
     }
   }
 }
