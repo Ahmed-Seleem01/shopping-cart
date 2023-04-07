@@ -9,6 +9,7 @@ body{
   width: 100%;
 
   .description{
+    overflow: hidden;
     position: absolute;
     top: 17%;
     right: 0;
@@ -44,7 +45,7 @@ body{
 
     .description{
       padding: 30% 15%;
-      border: 2px solid;
+      // border: 2px solid;
       top: 11%;
     }
   }
