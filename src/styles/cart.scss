@@ -1,0 +1,33 @@
+.cart-container{
+  font-size: 1.3rem;
+  border: 2px solid black;
+  display: flex;
+  flex-direction: column;
+
+  div{
+    width: 100%;
+    // border: 2px solid;
+    display: flex;
+    align-items: center;
+    gap: 100px;
+    justify-content: space-between;
+  }
+  position: fixed;
+  overflow: auto;
+  padding: 50px 20px;
+  right: 0;
+  top: 15vh;
+  background-color: rgba(8, 19, 41, 0.9);
+  width: 30%;
+  height: 68%;
+  color: white;
+  transform-origin: 100%;
+  transform: scaleX(0);
+  transition: transform 0.5s ease-out;
+
+}
+
+.toggle-cart{
+  transform: scaleX(1);
+  transition: transform 0.5s ease-in;
+}
