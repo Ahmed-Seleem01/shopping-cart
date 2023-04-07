@@ -1,22 +1,27 @@
 .card {
-  background-color: rgb(240, 240, 240);
+
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 100px;
+  padding: 130px 30px;
   font-size: 1.2rem;
+  text-align: center;
 
   > div {
+    // border: 2px solid;
+    padding: 20px;
     display: flex;
     gap: 30px;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
+    flex-wrap: wrap;
 
     > div {
       font-size: 20px;
       font-weight: 700;
       display: flex;
+      align-items: center;
       gap: 20px;
 
       button {
@@ -39,6 +44,9 @@
         padding: 5px;
         border-radius: 7px;
         border: 1px solid;
+        min-width: 150px;
+        max-width: 100%;
+        width: 70%;
       }
     }
 
@@ -53,6 +61,7 @@
   }
 
   img {
+    width: 100%;
     max-width: 500px;
     border-radius: 10px;
   }
