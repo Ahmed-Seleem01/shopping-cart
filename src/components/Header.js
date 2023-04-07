@@ -27,14 +27,14 @@ const Header = ({ headerCart }) => {
 
   return (
     <nav className="header">
-      <div>
+      <div className="header-left">
         <img src={icon} alt="site icon" />
         <Link to="/">
           <h1>Ingrediento</h1>
         </Link>
       </div>
-      <div>
-        <div>
+      <div className="header-right">
+        <div className="global-links">
           <Link to="/">
             <h2>Homepage</h2>
           </Link>
@@ -42,9 +42,9 @@ const Header = ({ headerCart }) => {
             <h2>Shopping</h2>
           </Link>
         </div>
-        <div onClick={handleToggle}>
-          <img src={cart} alt="cart icon" />
+        <div className="cart" onClick={handleToggle}>
           <sup>{cartItems}</sup>
+          <img src={cart} alt="cart icon" />
         </div>
       </div>
       <Cart showCart= {showCart} headerCart={headerCart}/>
