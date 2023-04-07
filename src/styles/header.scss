@@ -1,18 +1,38 @@
-.header{
+.header {
+  box-sizing: border-box;
+  position: fixed;
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 20px;
-  padding: 10px;
-  background-color: rgb(151, 151, 151);
-  color: white;
+  padding: 5px 20px;
+  background-color: rgb(152, 238, 205);
+  padding-right: 50px;
+  border-bottom: 2px solid rgb(57, 199, 180);
 
-  img{
+  a{
+    text-decoration: none;
+    color: white;
+  }
+  img {
     width: 50px;
   }
-  >div{
+  > div {
     display: flex;
-    gap: 20px;
+    gap: 10px;
     align-items: center;
+    
+    sup{
+      color: red;
+      font-size: 1.5rem;
+    }
+    > div {
+      cursor: pointer;
+      display: flex;
+      gap: 20px;
+      align-items: center;
+
+    }
   }
 }
