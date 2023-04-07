@@ -16,15 +16,21 @@ const Shopping = () => {
 
   // console.log(ingredients);
   return (
-    <div className="ingredients-cards">
-      {ingredients.map((ingredient) => (
-        <Link to={`/shopping/${ingredient.name}`}>
-          <div key={ingredient.id} className="ingredient-card">
-            <h2>{ingredient.name}</h2>
-            <img src={ingredient.image} alt={ingredient.name} />
-          </div>
-        </Link>
-      ))}
+    <div className="container">
+      <div>
+        <p>Choose from various gredients</p>
+      </div>
+
+      <div className="ingredients-cards">
+        {ingredients.map((ingredient) => (
+          <Link to={`/shopping/${ingredient.name}`}>
+            <div key={ingredient.id} className="ingredient-card">
+              <h2>{ingredient.name}</h2>
+              <img src={ingredient.image} alt={ingredient.name} />
+            </div>
+          </Link>
+        ))}
+      </div>
     </div>
   );
 };
