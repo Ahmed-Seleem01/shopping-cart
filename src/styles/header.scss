@@ -34,7 +34,8 @@
     align-items: center;
 
     .global-links{
-      @extend .header-right
+      @extend .header-right;
+      gap: 10%;
     }
 
     .cart{
@@ -55,13 +56,15 @@
 
 }
 
-@media (max-width: 450px) {
+@media (max-width: 500px) {
   .header{
     flex-wrap: wrap;
     font-size: 0.6rem;
     padding: 25px 0;
     gap:2px;
-
+    .global-links{
+      gap: 1%;
+    }
     img{
       width: 30px;
     }
