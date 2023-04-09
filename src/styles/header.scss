@@ -57,6 +57,7 @@
 
 @media (max-width: 450px) {
   .header{
+    flex-wrap: wrap;
     font-size: 0.6rem;
     padding: 25px 0;
     gap:2px;
