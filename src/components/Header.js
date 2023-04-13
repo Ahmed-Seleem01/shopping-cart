@@ -17,14 +17,11 @@ const Header = ({ headerCart }) => {
   }, [headerCart]);
 
   const handleToggle = ()=>{
-    if(showCart === "cart-container"){
-
-      setShowCart("cart-container toggle-cart")
-    }else{
-      setShowCart("cart-container")
-    }
+    setShowCart("cart-container toggle-cart")
   }
-
+  const hide = ()=>{
+    setShowCart("cart-container")
+  }
   return (
     <nav className="header">
       <div className="header-left">
@@ -47,7 +44,7 @@ const Header = ({ headerCart }) => {
           <img src={cart} alt="cart icon" />
         </div>
       </div>
-      <Cart showCart= {showCart} headerCart={headerCart}/>
+      <Cart hide={hide} showCart= {showCart} headerCart={headerCart}/>
     </nav>
   );
 };
