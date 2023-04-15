@@ -13,7 +13,7 @@ const Header = ({ headerCart }) => {
   console.log(cartItems);
 
   useEffect(() => {
-    setCartItems(Number(cartItems) + Number(quantity));
+    setCartItems(Number(cartItems) + 1);
   }, [headerCart]);
 
   const handleToggle = ()=>{
@@ -40,7 +40,7 @@ const Header = ({ headerCart }) => {
           </Link>
         </div>
         <div className="cart" onClick={handleToggle}>
-          <sup>{cartItems}</sup>
+          <sup>{cartItems -1}</sup>
           <img src={cart} alt="cart icon" />
         </div>
       </div>
