@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
+import SetQuantity from "./SetQuantity";
 import "../styles/card.scss";
 
 const Card = ({setHeaderCart}) => {
@@ -7,24 +8,21 @@ const Card = ({setHeaderCart}) => {
   const [quantity, setQuantity] = useState(1);
   const ingredientName = useParams().name;
 
-  const handleChange = (e)=>{
-    setQuantity(e.target.value)
-  }
+  // const handleChange = (e)=>{
+  //   console.log("e.target")
+  //   setQuantity(5)
+  // }
+;
+  useEffect(()=>{
+    setQuantity(quantity)
+  },[quantity])
 
   const handleSubmit = ()=>{
     setHeaderCart([quantity, ingredient.price, ingredient.name]);
     setQuantity(1);
   }
 
-  const increment = ()=>{
-    setQuantity(+quantity + 1)
-  }
-
-  const decrement = ()=>{
-    if(quantity > 1){
-      setQuantity(quantity - 1)
-    }
-  }
+  
   useEffect(() => {
     fetch('https://ahmed-seleem01.github.io/test-cart/ingredientsAPI.json', {
       mode: 'cors'
@@ -44,11 +42,7 @@ const Card = ({setHeaderCart}) => {
       <p>{ingredient.description}</p>
       <p>price: ${ingredient.price}</p>
       <div>
-        <div>
-          <button onClick={decrement}>-</button>
-          <input type= "number" min = "1" id="quantity" name="quantity" value={quantity} onChange={handleChange} />
-          <button onClick={increment}>+</button>
-        </div>
+        <SetQuantity quantity={quantity} setQuantity={setQuantity}/>
         <button className="add-btn" onClick={handleSubmit} >Add to cart</button>
       </div>
     </div>
