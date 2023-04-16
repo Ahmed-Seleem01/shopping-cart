@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/test-cart/static/css/main.5a94378f.css",
+    "main.css": "/test-cart/static/css/main.e842c344.css",
     "main.js": "/test-cart/static/js/main.e2244253.js",
     "static/media/syd-wachs-epqNIYI6S7E-unsplash.jpg": "/test-cart/static/media/syd-wachs-epqNIYI6S7E-unsplash.bbcd3e9d7223fba3daa1.jpg",
     "static/media/ingredients.png": "/test-cart/static/media/ingredients.08cc1e1025a818a10055.png",
     "static/media/shopping-cart.png": "/test-cart/static/media/shopping-cart.96c73cb49987ccdf1154.png",
     "index.html": "/test-cart/index.html",
-    "main.5a94378f.css.map": "/test-cart/static/css/main.5a94378f.css.map",
+    "main.e842c344.css.map": "/test-cart/static/css/main.e842c344.css.map",
     "main.e2244253.js.map": "/test-cart/static/js/main.e2244253.js.map"
   },
   "entrypoints": [
-    "static/css/main.5a94378f.css",
+    "static/css/main.e842c344.css",
     "static/js/main.e2244253.js"
   ]
 }
