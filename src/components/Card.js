@@ -24,7 +24,7 @@ const Card = ({setHeaderCart}) => {
 
   
   useEffect(() => {
-    fetch('https://ahmed-seleem01.github.io/test-cart/ingredientsAPI.json', {
+    fetch('https://ahmed-seleem01.github.io/shopping-cart/ingredientsAPI.json', {
       mode: 'cors'
     })
       .then(response => response.json())
