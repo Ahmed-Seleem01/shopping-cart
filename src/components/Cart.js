@@ -25,14 +25,14 @@ const Cart = ({ hide, showCart, headerCart }) => {
   return (
     <div className={showCart}>
       <button className="close-cart" onClick={closePopup}>X</button>
-      {items.map((item, index) => (
+      {items.length > 0 ? items.map((item, index) => (
         <div key={index} className="cart-item">
           <span>{item[2]}</span>
           <span><SetQuantity quantity={item[0]} setQuantity={(newQuantity) => handleQuantityChange(index, newQuantity)} /></span>
           <span>{(item[1] * item[0]).toFixed(2)}$</span>
           <button>Checkout</button>
         </div>
-      ))}
+      )) : "No items"}
     </div>
   );
 };
