@@ -13,6 +13,24 @@ import Cart from "./Cart";
 
 // declare functional component with props
 const Header = ({ headerCart }) => {
+  const [dimensions, setDimensions] = useState({
+    height: window.innerHeight,
+    width: window.innerWidth,
+  });
+  useEffect(() => {
+    function handleResize() {
+      setDimensions({
+        height: window.innerHeight,
+        width: window.innerWidth,
+      });
+    }
+
+    window.addEventListener("resize", handleResize);
+
+    return (_) => {
+      window.removeEventListener("resize", handleResize);
+    };
+  });
   // state hook to hold cart items
   const [cartItems, setCartItems] = useState([]);
   // state hook to hold count of cart items
@@ -34,6 +52,13 @@ const Header = ({ headerCart }) => {
     setShowCart("cart-container");
   };
 
+  const showList = (e)=>{
+    const icon = e.target;
+    const list = document.querySelector(".global-links");
+    console.log(list);
+    list.classList.toggle("show-list");
+  }
+
   return (
     // main header container
     <nav className="header">
@@ -49,19 +74,27 @@ const Header = ({ headerCart }) => {
       </div>
       {/* container for right section of header */}
       <div className="header-right">
+        {dimensions.width <= 500 && (
+          <span className="humberger" onClick={showList}>
+            <span></span>
+            <span></span>
+            <span></span>
+          </span>
+        )}
         {/* container for global links */}
-        <div className="global-links">
-          {/* link to homepage */}
-          <Link to="/">
-            {/* global link title */}
-            <h2>Homepage</h2>
-          </Link>
-          {/* link to shopping page */}
-          <Link to="/shopping">
-            {/* global link title */}
-            <h2>Shopping</h2>
-          </Link>
-        </div>
+        
+          <div className="global-links">
+            {/* link to homepage */}
+            <Link to="/">
+              {/* global link title */}
+              <h2>Homepage</h2>
+            </Link>
+            {/* link to shopping page */}
+            <Link to="/shopping">
+              {/* global link title */}
+              <h2>Shopping</h2>
+            </Link>
+          </div>
         {/* container for cart icon */}
         <div className="cart" onClick={handleToggle}>
           {/* cart item count */}
