@@ -50,7 +50,7 @@
     justify-content: center;
     margin-top: 4px;
 
-    .humberger {
+    .hamburger {
       @extend .flex-display;
       // border: 2px solid;
       flex-direction: column;
@@ -72,7 +72,7 @@
         transform: scaleX(0.7);
       }
     }
-    .humberger:hover span:nth-child(2) {
+    .hamburger:hover span:nth-child(2) {
       transform: scaleX(1);
     }
     .global-links {

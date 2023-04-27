@@ -75,7 +75,7 @@ const Header = ({ headerCart }) => {
       {/* container for right section of header */}
       <div className="header-right">
         {dimensions.width <= 500 && (
-          <span className="humberger" onClick={showList}>
+          <span className="hamburger" onClick={showList}>
             <span></span>
             <span></span>
             <span></span>
@@ -83,7 +83,7 @@ const Header = ({ headerCart }) => {
         )}
         {/* container for global links */}
         
-          <div className="global-links">
+          <div className="global-links show-list">
             {/* link to homepage */}
             <Link to="/">
               {/* global link title */}
