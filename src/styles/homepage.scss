@@ -1,42 +1,61 @@
-body{
+// Define a variable called '$main-color' and set it to a RGB value
+$main-color: rgb(252, 252, 252);
+
+// Set the background color and font family for the entire page
+body {
   background-color: rgb(240, 240, 240);
+  font-family: Arial, Tahoma, Verdana, sans-serif;
 }
 
-.homepage{
-  background: url("../images/syd-wachs-epqNIYI6S7E-unsplash.jpg") no-repeat fixed;
-  background-color: rgba(25,256,256, 0.1);
-  background-size: cover;
-  background-position: center;
-  background-blend-mode: screen;
-  min-height: 100vh;
+// Style the 'homepage' class
+.homepage {
+  // Set the width and height of the 'homepage' section to cover the entire viewport
   width: 100%;
+  height: 100vh;
+  // Center the content of the 'homepage' section vertically
+  display: flex;
+  align-items: center;
+  // Set the background image and styles for the 'homepage' section
+  background: url("../images/syd-wachs-epqNIYI6S7E-unsplash.jpg") no-repeat
+    fixed;
+  background-size: cover;
+  background-position: left bottom;
+  background-color: rgba(10, 10, 50, 0.5);
+  background-blend-mode: screen;
 
-  .description{
-    font-size: 200%;
-    color: rgb(252, 252, 252);
-    padding: 180px 15%;
+  // Style the 'description' class within the 'homepage' section
+  .description {
+    font-size: 2rem;
+    color: $main-color;
+    padding: 0 15%;
     font-weight: 500;
 
-    button{
-      a{
+    // Style the 'Shop Now' button within the 'description' class
+    button {
+      a {
         text-decoration: none;
-        color: rgb(252, 252, 252);
       }
+      font-weight: 700;
       background-color: rgb(120, 247, 183);
-      color: rgb(14, 13, 13);
+      color: $main-color;
       padding: 10px 20px;
       border-radius: 10px;
-      border: 1px solid rgb(102, 102, 102);
+      border: 1px solid $main-color;
       cursor: pointer;
     }
   }
 }
 
-@media (max-width: 450px){
-  .homepage{
+// Set the media query for screen sizes less than 500px
+@media (max-width: 500px) {
+  // Center the content of the 'homepage' section horizontally and vertically
+  .homepage {
     text-align: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    justify-content: center;
+
+    // Reduce the font size of the 'description' text
+    .description {
+      font-size: 1.5rem;
+    }
   }
 }
