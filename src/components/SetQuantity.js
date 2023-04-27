@@ -1,32 +1,27 @@
-import { useEffect, useState } from "react";
+// Importing style for the component
 import "../styles/set-quantity.scss";
 
-const SetQuantity = ({setQuantity=null, quantity}) => {
-  const [ownQuantity, setOwnQuantity] = useState(quantity);
-
-
-  useEffect(()=>{
-    if(quantity === 1){
-      setOwnQuantity(quantity)
-    }
-  }, [quantity])
+const SetQuantity = ({ setQuantity = null, quantity }) => {
+  // Function to handle input change
   const handleChange = (e) => {
-    setOwnQuantity(e.target.value);
+    // Update quantity state with input value
     setQuantity(e.target.value);
   };
 
+  // Function to increment quantity
   const increment = () => {
-    setOwnQuantity(+ownQuantity + 1);
-    setQuantity(+ownQuantity + 1);
+    setQuantity(+quantity + 1);
   };
 
+  // Function to decrement quantity
   const decrement = () => {
-    if (ownQuantity > 1) {
-      setOwnQuantity(ownQuantity - 1);
-      setQuantity(ownQuantity - 1);
+    // Check if quantity is greater than 1 as quantity must be positive
+    if (quantity > 1) {
+      setQuantity(quantity - 1);
     }
   };
 
+  // Render the quantity input field and buttons
   return (
     <div className="set-quantity">
       <button onClick={decrement}>-</button>
@@ -35,7 +30,7 @@ const SetQuantity = ({setQuantity=null, quantity}) => {
         min="1"
         id="quantity"
         name="quantity"
-        value={ownQuantity}
+        value={quantity}
         onChange={handleChange}
       />
       <button onClick={increment}>+</button>
@@ -43,4 +38,5 @@ const SetQuantity = ({setQuantity=null, quantity}) => {
   );
 };
 
-export default SetQuantity;
+// Export the SetQuantity component for usage
+export default SetQuantity; 
