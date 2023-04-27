@@ -72,7 +72,8 @@
         transform: scaleX(0.7);
       }
     }
-    .hamburger:hover span:nth-child(2) {
+    .hamburger:hover span:nth-child(2),
+    .hamburger:focus span:nth-child(2) {
       transform: scaleX(1);
     }
     .global-links {
