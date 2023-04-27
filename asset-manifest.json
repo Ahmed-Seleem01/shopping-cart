@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/shopping-cart/static/css/main.84ec93cd.css",
-    "main.js": "/shopping-cart/static/js/main.90a375e6.js",
+    "main.css": "/shopping-cart/static/css/main.e1289a4a.css",
+    "main.js": "/shopping-cart/static/js/main.5bdb029e.js",
     "static/media/syd-wachs-epqNIYI6S7E-unsplash.jpg": "/shopping-cart/static/media/syd-wachs-epqNIYI6S7E-unsplash.bbcd3e9d7223fba3daa1.jpg",
     "static/media/ingredients.png": "/shopping-cart/static/media/ingredients.08cc1e1025a818a10055.png",
     "static/media/shopping-cart.png": "/shopping-cart/static/media/shopping-cart.96c73cb49987ccdf1154.png",
     "index.html": "/shopping-cart/index.html",
-    "main.84ec93cd.css.map": "/shopping-cart/static/css/main.84ec93cd.css.map",
-    "main.90a375e6.js.map": "/shopping-cart/static/js/main.90a375e6.js.map"
+    "main.e1289a4a.css.map": "/shopping-cart/static/css/main.e1289a4a.css.map",
+    "main.5bdb029e.js.map": "/shopping-cart/static/js/main.5bdb029e.js.map"
   },
   "entrypoints": [
-    "static/css/main.84ec93cd.css",
-    "static/js/main.90a375e6.js"
+    "static/css/main.e1289a4a.css",
+    "static/js/main.5bdb029e.js"
   ]
 }
