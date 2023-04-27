@@ -1,72 +1,85 @@
-.header * {
-  // border: 2px solid;
-}
-.header {
-  width: 100vw;
+// Import the "Pacifico" font from Google Fonts
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap"); 
+
+// Define a reusable class for flex display with center aligned items
+.flex-display{
   display: flex;
   align-items: center;
-  justify-content:space-between;
-  gap: 1%;
-  padding: 15px 0;
+}
+
+// Global styles of the header
+.header {
+  // Inherit the properties of the ".flex-display" class
+  @extend .flex-display; 
+  width: 100%;
+  height: 80px;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 10px 30px;
   background-color: rgb(152, 238, 205);
   border-bottom: 2px solid rgb(57, 199, 180);
-  font-size: 1rem;
+  font-size: 0.8rem;
   position: fixed;
 
-  a{
+  // Style all link in the header
+  a {
     text-decoration: none;
     color: white;
   }
+  // Style all icons in the header
   img {
-    width: 50px;
+    width: 30px;
+    height: 30px;
   }
-  
-  .header-left{
-    padding-left: 3%;
-    display: flex;
-    gap: 3%;
-    align-items: center;
-  }
-  .header-right{
-    padding-right: 10%;
-    display: flex;
-    gap: 3%;
-    align-items: center;
 
-    .global-links{
-      @extend .header-right;
-      gap: 10%;
+  // Style the left part of the header
+  .header-left {
+    @extend .flex-display;
+    // Set the font-family to "Pacifico"
+    font-family: "Pacifico", cursive; 
+    gap: 10px;
+  }
+  // Style the right part of the header
+  .header-right {
+    @extend .flex-display;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 4px;
+    
+    .global-links {
+      @extend .flex-display;
+      gap: 20px;
+      font-size: 0.8rem;
     }
 
-    .cart{
-      display: flex;
+    // Style the container that hold cart icon
+    .cart {
+      @extend .flex-display;
       flex-direction: column;
-      align-items: center;
       justify-content: center;
       cursor: pointer;
 
-      sup{
+      sup {
         align-self: flex-end;
         color: red;
         font-size: 1.2rem;
-        padding-bottom: 0;
+        margin-bottom: -5px;
       }
     }
   }
-
 }
 
+/* Media query for screens with a maximum width of 500px. Modifies the font-size and padding of the ".header" class and the font-size and gap of the ".global-links" class within the ".header-right" class. */
 @media (max-width: 500px) {
-  .header{
-    flex-wrap: wrap;
+  .header {
     font-size: 0.6rem;
-    padding: 25px 0;
-    gap:2px;
-    .global-links{
-      gap: 1%;
+    padding: 10px 25px;
+    .header-right {
+      .global-links {
+        font-size: 0.6rem;
+        gap: 10px;
+      }
     }
-    img{
-      width: 30px;
-    }
+    
   }
 }

@@ -1,52 +1,87 @@
+// import image for site icon
 import icon from "../images/ingredients.png";
+// import image for shopping cart icon
 import cart from "../images/shopping-cart.png";
+// import header styles
 import "../styles/header.scss";
+// import Link component from React Router
 import { Link } from "react-router-dom";
+// import useEffect and useState hooks from React
 import { useEffect, useState } from "react";
-
+// import Cart component
 import Cart from "./Cart";
 
+// declare functional component with props
 const Header = ({ headerCart }) => {
-  const [quantity=0] = headerCart;
-  const [cartItems, setCartItems] = useState(0);
+  // state hook to hold cart items
+  const [cartItems, setCartItems] = useState([]);
+  // state hook to hold count of cart items
+  const [cartItemsCount, setCartItemsCount] = useState(0);
+  // state hook to toggle visibility of cart
   const [showCart, setShowCart] = useState("cart-container");
-  console.log(cartItems);
 
+  // useEffect hook to update cart item count whenever cartItems array changes
   useEffect(() => {
-    setCartItems(Number(cartItems) + 1);
-  }, [headerCart]);
+    setCartItemsCount(cartItems.length);
+  }, [cartItems]);
 
-  const handleToggle = ()=>{
-    setShowCart("cart-container toggle-cart")
-  }
-  const hide = ()=>{
-    setShowCart("cart-container")
-  }
+  // function to toggle visibility of cart
+  const handleToggle = () => {
+    setShowCart("cart-container toggle-cart");
+  };
+  // function to hide cart
+  const hide = () => {
+    setShowCart("cart-container");
+  };
+
   return (
+    // main header container
     <nav className="header">
+      {/* container for left section of header */}
       <div className="header-left">
+        {/* site icon */}
         <img src={icon} alt="site icon" />
+        {/* link to homepage */}
         <Link to="/">
+          {/* site name */}
           <h1>Ingrediento</h1>
         </Link>
       </div>
+      {/* container for right section of header */}
       <div className="header-right">
+        {/* container for global links */}
         <div className="global-links">
+          {/* link to homepage */}
           <Link to="/">
+            {/* global link title */}
             <h2>Homepage</h2>
           </Link>
+          {/* link to shopping page */}
           <Link to="/shopping">
+            {/* global link title */}
             <h2>Shopping</h2>
           </Link>
         </div>
+        {/* container for cart icon */}
         <div className="cart" onClick={handleToggle}>
-          <sup>{cartItems -1}</sup>
+          {/* cart item count */}
+          <sup>{cartItemsCount}</sup>
+          {/* shopping cart icon */}
           <img src={cart} alt="cart icon" />
         </div>
       </div>
-      <Cart hide={hide} showCart= {showCart} headerCart={headerCart}/>
+      {/* Cart component to display shopping cart */}
+      <Cart
+        hide={hide}
+        showCart={showCart}
+        headerCart={headerCart}
+        setCartItems={setCartItemsCount}
+        items={cartItems}
+        setItems={setCartItems}
+      />
     </nav>
   );
 };
 
+// export Header component
 export default Header;
